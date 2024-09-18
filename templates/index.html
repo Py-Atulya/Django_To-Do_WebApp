@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo WebApp</title>
+    <link rel="shortcut icon" href="{% static 'images/django.svg' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h3>{{heading}}</h3>
+        <div class="grid-container">
+            <div class="grid-item">
+                {% for i in all_data %}
+                <div class="ToDo_card">
+                    <div class="card_title">{{i.title}}</div>
+                    <div class="card_details">{{ i.details }}</div>
+                    <div class="card_date">{{ i.Date }}</div>
+                    <div class="card_remove_button">
+                        <a href="{% url 'remove_todo_item' i.id %}" class="btn_remove">Remove</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="grid-item">
+                <form method="post">
+                    {% csrf_token %} 
+                    <div class="title_label">
+                        <input type="text" id="title" name="title" placeholder="Title" required>
+                    </div>
+                    <div class="details_label">
+                        <textarea id="details" name="details" placeholder="Details" required></textarea>
+                    </div>
+                    <div class="date_label">
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="submit_button">
+                        <button type="submit" class="btn_submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

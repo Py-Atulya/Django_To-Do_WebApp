@@ -1,0 +1,104 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto ;
+    background-color: #2196F3;
+    padding: 10px;
+}
+.grid-item{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+input, textarea{
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    width: 70%;
+    border: 0px;
+    border-radius: 8px;
+    cursor: pointer ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input::after, textarea::after{
+    border: none;
+    border: #4CAF50;
+}
+.btn_submit{
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: #2196F3;
+    transition: background-color 0.3s;
+    width: 73%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h3{
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+.ToDo_card{
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #4CAF50;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card_title{
+    font-size: 18px;
+    text-align: left;
+    text-decoration: underline;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card_details{
+    font-size: 16px;
+    color: #4CAF50;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    margin-top: 10px;
+    text-align: left;
+}
+.card_date{
+    font-size: 16px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    margin-top: 10px;
+    text-align: right;
+    float: right;
+}
+.card_remove_button{
+    padding: 5px 10px;
+    float: left;
+    margin-top: 23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn_remove{
+    padding: 5px 10px;
+    background-color: rgb(245, 49, 49);
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: #f44336;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
